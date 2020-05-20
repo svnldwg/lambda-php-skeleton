@@ -5,6 +5,14 @@ provider:
     stage: ${opt:stage, 'dev'}
     region: ${env:AWS_DEFAULT_REGION}
     runtime: provided
+    memorySize: 128 # Overwrite the default memory size. Default is 1024
+    usagePlan: # Optional usage plan configuration
+        quota:
+            limit: 1000
+            period: MONTH
+        throttle:
+            burstLimit: 20
+            rateLimit: 10
 
 plugins:
     - ./vendor/bref/bref
@@ -30,7 +38,7 @@ functions:
             - ${bref:layer.php-74}
         events:
             - sns:
-                  arn: !Ref snsOrderXml
+                  arn: !Ref snsTriggerFunction
                   topicName: triggerFunction-${opt:stage}
     http:
         handler: lambda/http.php

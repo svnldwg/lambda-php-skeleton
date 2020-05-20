@@ -7,5 +7,5 @@ require_once __DIR__ . '/../config/bootstrap.php';
 return static function ($data) {
     var_dump($data);
 
-    return 'hello';
+    return 'hello!';
 };
