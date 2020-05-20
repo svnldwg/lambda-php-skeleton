@@ -1,0 +1,8 @@
+parameters:
+    level: 7
+    inferPrivatePropertyTypeFromConstructor: true
+    checkMissingIterableValueType: true
+    paths:
+        - %currentWorkingDirectory%/config/
+        - %currentWorkingDirectory%/lambda/
+        - %currentWorkingDirectory%/src/
