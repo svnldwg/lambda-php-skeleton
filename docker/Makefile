@@ -42,6 +42,15 @@ composer-install-prod:
 	$(RUN) composer install --prefer-dist --optimize-autoloader --no-dev
 .PHONY: composer-install-prod
 
+serverless-remove:
+	$(RUN) serverless remove --stage dev
+.PHONY: serverless-remove
+
+# DEBUG
+serverless-print:
+	$(RUN) serverless print --stage dev
+.PHONY: serverless-print
+
 # LOCAL EXECUTION
 function-test:
 	$(RUN) serverless invoke local --stage dev -f function
@@ -51,3 +60,7 @@ function-test:
 function-invoke:
 	$(RUN) serverless invoke --stage dev --function function --data "hello world"
 .PHONY: function-invoke
+
+http-logs:
+	$(RUN) serverless logs --stage dev --function http --tail
+.PHONY: http-logs
