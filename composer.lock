@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a9b3967c71e3b5b660f7edbc9b2c3e9c",
+    "content-hash": "3da2429b3add9d5811ee0a007c555ad3",
     "packages": [
         {
             "name": "async-aws/cloud-formation",
@@ -60,16 +60,16 @@
         },
         {
             "name": "async-aws/core",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/async-aws/core.git",
-                "reference": "b12f69c0acb6a0abdf6f0e26cc0c5a480f6a7b91"
+                "reference": "f9309532be4216b59da3c63ef25538d499dadac0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/async-aws/core/zipball/b12f69c0acb6a0abdf6f0e26cc0c5a480f6a7b91",
-                "reference": "b12f69c0acb6a0abdf6f0e26cc0c5a480f6a7b91",
+                "url": "https://api.github.com/repos/async-aws/core/zipball/f9309532be4216b59da3c63ef25538d499dadac0",
+                "reference": "f9309532be4216b59da3c63ef25538d499dadac0",
                 "shasum": ""
             },
             "require": {
@@ -77,7 +77,9 @@
                 "ext-json": "*",
                 "ext-simplexml": "*",
                 "php": "^7.2.5",
-                "psr/log": "~1.0",
+                "psr/cache": "^1.0",
+                "psr/log": "^1.0",
+                "symfony/deprecation-contracts": "^2.1",
                 "symfony/http-client": "^4.4 || ^5.0",
                 "symfony/http-client-contracts": "^1.1.8 || ^2.0",
                 "symfony/service-contracts": "^1.0 || ^2.0"
@@ -118,7 +120,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-05-07T21:27:54+00:00"
+            "time": "2020-05-21T16:57:17+00:00"
         },
         {
             "name": "async-aws/lambda",
@@ -243,6 +245,52 @@
                 }
             ],
             "time": "2020-04-27T12:07:20+00:00"
+        },
+        {
+            "name": "bref/logger",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brefphp/logger.git",
+                "reference": "837b2b7867c09d04d647a4042d86fa873e641c21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brefphp/logger/zipball/837b2b7867c09d04d647a4042d86fa873e641c21",
+                "reference": "837b2b7867c09d04d647a4042d86fa873e641c21",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.2",
+                "psr/log": "^1.1"
+            },
+            "require-dev": {
+                "mnapoli/hard-mode": "^0.1.1",
+                "mnapoli/pretty": "^1.0",
+                "phpstan/phpstan": "^0.11.2",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bref\\Logger\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "All you need to log with Bref on AWS Lambda",
+            "keywords": [
+                "aws-lambda",
+                "bref",
+                "cloudwatch",
+                "lambda",
+                "logger",
+                "psr-3"
+            ],
+            "time": "2019-06-27T15:35:13+00:00"
         },
         {
             "name": "hollodotme/fast-cgi-client",
@@ -509,6 +557,52 @@
                 "uri"
             ],
             "time": "2015-12-19T14:08:53+00:00"
+        },
+        {
+            "name": "psr/cache",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/cache.git",
+                "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/cache/zipball/d11b50ad223250cf17b86e38383413f5a6764bf8",
+                "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Cache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for caching libraries",
+            "keywords": [
+                "cache",
+                "psr",
+                "psr-6"
+            ],
+            "time": "2016-08-06T20:24:11+00:00"
         },
         {
             "name": "psr/container",
@@ -902,6 +996,66 @@
                 }
             ],
             "time": "2020-03-30T11:42:42+00:00"
+        },
+        {
+            "name": "symfony/deprecation-contracts",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/deprecation-contracts.git",
+                "reference": "ede224dcbc36138943a296107db2b8b2a690ac1c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/ede224dcbc36138943a296107db2b8b2a690ac1c",
+                "reference": "ede224dcbc36138943a296107db2b8b2a690ac1c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "function.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "A generic function and convention to trigger deprecation notices",
+            "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-02-14T07:31:56+00:00"
         },
         {
             "name": "symfony/filesystem",
