@@ -64,7 +64,7 @@ resources:
 package:
     exclude:
         - 'dev/**'
-        - 'docker/**'
+        - 'docs/**'
         - 'node_modules/**'
         - 'test/**'
         - 'tests/**'
