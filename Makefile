@@ -42,24 +42,29 @@ composer-install-prod:
 	$(RUN) composer install --prefer-dist --optimize-autoloader --no-dev
 .PHONY: composer-install-prod
 
-serverless-remove:
-	$(RUN) serverless remove --stage dev
-.PHONY: serverless-remove
-
 # DEBUG
-serverless-print:
+serverless-print: ## print generated serverless.yml with all populated values
 	$(RUN) serverless print --stage dev
 .PHONY: serverless-print
 
-# LOCAL EXECUTION
+# INVOKE FUNCTIONS LOCALLY
 function-test:
-	$(RUN) serverless invoke local --stage dev -f function
+	serverless invoke local --stage dev --function function --data "hello world"
 .PHONY: function-test
 
-# CLOUD EXECUTION
+# INVOKE FUNCTIONS ON AWS
 function-invoke:
 	$(RUN) serverless invoke --stage dev --function function --data "hello world"
 .PHONY: function-invoke
+
+# MONITORING
+bref-dashboard:
+	vendor/bin/bref dashboard
+.PHONY: bref-dashboard
+
+function-logs:
+	$(RUN) serverless logs --stage dev --function function
+.PHONY: http-logs
 
 http-logs:
 	$(RUN) serverless logs --stage dev --function http --tail
