@@ -34,3 +34,17 @@ Deployment to AWS can be done by executing
 ```
 make serverless-deploy
 ```
+
+## TODO
+
+* Dependency Injection
+* Environment variables
+* Database integration
+    * MySQL
+    * PostgreSQL
+    * Doctrine ORM
+    * DynamoDB 
+* SNS Integration
+* SQS Integration
+* S3 Integration
+* HTTP Authorization
