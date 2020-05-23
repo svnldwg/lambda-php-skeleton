@@ -48,14 +48,14 @@ serverless-print: ## print generated serverless.yml with all populated values
 .PHONY: serverless-print
 
 # INVOKE FUNCTIONS LOCALLY
-function-test:
+function-invoke-local:
 	serverless invoke local --stage dev --function function --data "hello world"
-.PHONY: function-test
+.PHONY: function-invoke-local
 
 # INVOKE FUNCTIONS ON AWS
-function-invoke:
+function-invoke-cloud:
 	$(RUN) serverless invoke --stage dev --function function --data "hello world"
-.PHONY: function-invoke
+.PHONY: function-invoke-cloud
 
 # MONITORING
 bref-dashboard:
