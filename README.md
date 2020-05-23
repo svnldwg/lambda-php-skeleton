@@ -18,6 +18,11 @@ export AWS_SECRET_ACCESS_KEY=YOUR_AWS_SECRET
 export AWS_DEFAULT_REGION=eu-central-1
 ```
 
+#### Quickstart
+
+After setting up the AWS env vars, you're ready to deploy the project to AWS. Just execute `make serverless-deploy`,
+which will install the composer dependencies and deploy your serverless project to AWS.
+
 #### Local serverless installation
 Most commands run in docker images. The bref console commands can not be executed in docker though, but must be executed locally. To use these commands, PHP >=7.2 and serverless must be installed.
 
