@@ -45,6 +45,7 @@ make serverless-deploy
 * Dependency Injection
 * Environment variables
 * Unit Tests
+* Xdebug
 * Database integration
     * MySQL
     * PostgreSQL
