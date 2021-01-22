@@ -6,7 +6,7 @@
         "ext-json": "*",
         "bref/bref": "^0.5.24",
         "bref/logger": "^1.0.0",
-        "guzzlehttp/guzzle": "^6.5.3"
+        "guzzlehttp/guzzle": "^7.2.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16.3",
