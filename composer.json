@@ -18,5 +18,13 @@
         "psr-4": {
             "LambdaPhpSkeleton\\": "src/"
         }
+    },
+    "scripts": {
+        "check": [
+            "@cs-check",
+            "@phpstan"
+        ],
+        "cs-check": "php-cs-fixer fix --config=dev/php-cs-fixer.php_cs --dry-run --diff",
+        "phpstan": "phpstan analyse -c dev/phpstan.neon --no-progress"
     }
 }
