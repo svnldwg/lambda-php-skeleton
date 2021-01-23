@@ -3,8 +3,13 @@
     "description": "Skeleton project to quickly get started with running PHP on AWS Lambda",
     "license": "MIT",
     "type": "project",
+    "config": {
+        "platform": {
+            "php": "8.0"
+        }
+    },
     "require": {
-        "php": "^7.4",
+        "php": "^8.0",
         "ext-json": "*",
         "bref/bref": "^1.1.4",
         "bref/logger": "^1.0.0",
