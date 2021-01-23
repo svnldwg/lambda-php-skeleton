@@ -55,3 +55,4 @@ make serverless-deploy
 * SQS Integration
 * S3 Integration
 * HTTP Authorization
+* Websockets

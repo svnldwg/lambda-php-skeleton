@@ -47,6 +47,10 @@ serverless-print: ## print generated serverless.yml with all populated values
 	$(RUN) serverless print --stage dev
 .PHONY: serverless-print
 
+bref-layers:
+	$(RUN) vendor/bin/bref layers eu-central-1
+.PHONY: bref-layers
+
 # INVOKE FUNCTIONS LOCALLY
 function-invoke-local:
 	serverless invoke local --stage dev --function function --data "hello world"
