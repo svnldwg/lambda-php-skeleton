@@ -12,6 +12,10 @@ ps:
 	$(DOCKER_COMPOSE) ps
 .PHONY: ps
 
+logs:
+	$(DOCKER_COMPOSE) logs -f
+.PHONY: logs
+
 # DEVELOPMENT
 cli:
 	$(RUN) /bin/bash
