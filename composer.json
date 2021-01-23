@@ -1,5 +1,7 @@
 {
     "name": "svnldwg/lambda-php-skeleton",
+    "description": "Skeleton project to quickly get started with running PHP on AWS Lambda",
+    "license": "MIT",
     "type": "project",
     "require": {
         "php": "^7.4",
