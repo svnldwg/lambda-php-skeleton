@@ -2,6 +2,10 @@
 
 Skeleton to kick off projects using AWS Lambda functions with PHP. Because AWS Lambda does not natively support PHP, the Bref Framework is used which provides a layer to execute PHP code on AWS Lambda.
 
+![CI Status](https://github.com/svnldwg/lambda-php-skeleton/workflows/Code%20Check/badge.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/svnldwg/lambda-php-skeleton)
+![PHPStan](https://img.shields.io/badge/PHPStan-Level%208-brightgreen.svg?style=flat)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
