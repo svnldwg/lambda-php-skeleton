@@ -57,7 +57,7 @@ bref-layers:
 
 # INVOKE FUNCTIONS LOCALLY
 function-invoke-local:
-	serverless invoke local --stage dev --function function --data "hello world"
+	$(RUN) vendor/bin/bref local function '{"year": 2020}'
 .PHONY: function-invoke-local
 
 # INVOKE FUNCTIONS ON AWS
