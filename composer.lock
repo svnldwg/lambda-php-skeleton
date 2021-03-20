@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "async-aws/core",
-            "version": "1.8.0",
+            "version": "1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/async-aws/core.git",
-                "reference": "79be58b857fba7c77dedf639a311c5e1554308cf"
+                "reference": "7c623f72aba439d514742c1476a803c7b4311cc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/async-aws/core/zipball/79be58b857fba7c77dedf639a311c5e1554308cf",
-                "reference": "79be58b857fba7c77dedf639a311c5e1554308cf",
+                "url": "https://api.github.com/repos/async-aws/core/zipball/7c623f72aba439d514742c1476a803c7b4311cc8",
+                "reference": "7c623f72aba439d514742c1476a803c7b4311cc8",
                 "shasum": ""
             },
             "require": {
@@ -28,7 +28,7 @@
                 "psr/cache": "^1.0",
                 "psr/log": "^1.0",
                 "symfony/deprecation-contracts": "^2.1",
-                "symfony/http-client": "^4.4 || ^5.0,!=5.2.0",
+                "symfony/http-client": "^4.4.16 || ^5.1.7,!=5.2.0",
                 "symfony/http-client-contracts": "^1.1.8 || ^2.0",
                 "symfony/service-contracts": "^1.0 || ^2.0"
             },
@@ -38,7 +38,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.8-dev"
+                    "dev-master": "1.10-dev"
                 }
             },
             "autoload": {
@@ -68,31 +68,31 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-01-16T12:29:20+00:00"
+            "time": "2021-02-24T11:03:41+00:00"
         },
         {
             "name": "async-aws/lambda",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/async-aws/lambda.git",
-                "reference": "55781f476fa0b475a2dc4bf599703f9492c8019e"
+                "reference": "0cd89c4449c88c5f50e2e46a498b50d42a27c8de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/async-aws/lambda/zipball/55781f476fa0b475a2dc4bf599703f9492c8019e",
-                "reference": "55781f476fa0b475a2dc4bf599703f9492c8019e",
+                "url": "https://api.github.com/repos/async-aws/lambda/zipball/0cd89c4449c88c5f50e2e46a498b50d42a27c8de",
+                "reference": "0cd89c4449c88c5f50e2e46a498b50d42a27c8de",
                 "shasum": ""
             },
             "require": {
-                "async-aws/core": "^1.2",
+                "async-aws/core": "^1.9",
                 "ext-json": "*",
                 "php": "^7.2.5 || ^8.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2-dev"
+                    "dev-master": "1.3-dev"
                 }
             },
             "autoload": {
@@ -122,20 +122,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-01-16T12:14:42+00:00"
+            "time": "2021-02-01T21:10:42+00:00"
         },
         {
             "name": "bref/bref",
-            "version": "1.1.4",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brefphp/bref.git",
-                "reference": "02c1ab0d3d8658a77e91997a3b14c22c5e82c3b7"
+                "reference": "c1c48ef3169a604d62221fb1ed2c3b0e3496d1f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brefphp/bref/zipball/02c1ab0d3d8658a77e91997a3b14c22c5e82c3b7",
-                "reference": "02c1ab0d3d8658a77e91997a3b14c22c5e82c3b7",
+                "url": "https://api.github.com/repos/brefphp/bref/zipball/c1c48ef3169a604d62221fb1ed2c3b0e3496d1f3",
+                "reference": "c1c48ef3169a604d62221fb1ed2c3b0e3496d1f3",
                 "shasum": ""
             },
             "require": {
@@ -194,7 +194,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-01-19T16:57:46+00:00"
+            "time": "2021-03-16T18:49:44+00:00"
         },
         {
             "name": "bref/logger",
@@ -582,16 +582,16 @@
         },
         {
             "name": "nyholm/psr7",
-            "version": "1.3.2",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Nyholm/psr7.git",
-                "reference": "a272953743c454ac4af9626634daaf5ab3ce1173"
+                "reference": "23ae1f00fbc6a886cbe3062ca682391b9cc7c37b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Nyholm/psr7/zipball/a272953743c454ac4af9626634daaf5ab3ce1173",
-                "reference": "a272953743c454ac4af9626634daaf5ab3ce1173",
+                "url": "https://api.github.com/repos/Nyholm/psr7/zipball/23ae1f00fbc6a886cbe3062ca682391b9cc7c37b",
+                "reference": "23ae1f00fbc6a886cbe3062ca682391b9cc7c37b",
                 "shasum": ""
             },
             "require": {
@@ -613,7 +613,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
@@ -651,7 +651,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-11-14T17:35:34+00:00"
+            "time": "2021-02-18T15:41:32+00:00"
         },
         {
             "name": "php-di/invoker",
@@ -1406,16 +1406,16 @@
         },
         {
             "name": "symfony/http-client",
-            "version": "v5.2.1",
+            "version": "v5.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-client.git",
-                "reference": "a77cbec69ea90dea509beef29b79748c0df33a83"
+                "reference": "c7d1f35a31ef153a302e3f80336170e1280b983d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-client/zipball/a77cbec69ea90dea509beef29b79748c0df33a83",
-                "reference": "a77cbec69ea90dea509beef29b79748c0df33a83",
+                "url": "https://api.github.com/repos/symfony/http-client/zipball/c7d1f35a31ef153a302e3f80336170e1280b983d",
+                "reference": "c7d1f35a31ef153a302e3f80336170e1280b983d",
                 "shasum": ""
             },
             "require": {
@@ -1430,14 +1430,14 @@
                 "php-http/async-client-implementation": "*",
                 "php-http/client-implementation": "*",
                 "psr/http-client-implementation": "1.0",
-                "symfony/http-client-implementation": "1.1"
+                "symfony/http-client-implementation": "2.2"
             },
             "require-dev": {
                 "amphp/amp": "^2.5",
                 "amphp/http-client": "^4.2.1",
                 "amphp/http-tunnel": "^1.0",
                 "amphp/socket": "^1.1",
-                "guzzlehttp/promises": "^1.3.1",
+                "guzzlehttp/promises": "^1.4",
                 "nyholm/psr7": "^1.0",
                 "php-http/httplug": "^1.0|^2.0",
                 "psr/http-client": "^1.0",
@@ -1469,7 +1469,7 @@
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-            "description": "Symfony HttpClient component",
+            "description": "Provides powerful methods to fetch HTTP resources synchronously or asynchronously",
             "homepage": "https://symfony.com",
             "funding": [
                 {
@@ -1485,7 +1485,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-14T10:56:50+00:00"
+            "time": "2021-03-01T00:40:14+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
@@ -2248,16 +2248,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v5.2.1",
+            "version": "v5.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "290ea5e03b8cf9b42c783163123f54441fb06939"
+                "reference": "298a08ddda623485208506fcee08817807a251dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/290ea5e03b8cf9b42c783163123f54441fb06939",
-                "reference": "290ea5e03b8cf9b42c783163123f54441fb06939",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/298a08ddda623485208506fcee08817807a251dd",
+                "reference": "298a08ddda623485208506fcee08817807a251dd",
                 "shasum": ""
             },
             "require": {
@@ -2300,7 +2300,7 @@
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-            "description": "Symfony Yaml Component",
+            "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "funding": [
                 {
@@ -2316,7 +2316,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-08T17:02:38+00:00"
+            "time": "2021-03-06T07:59:01+00:00"
         }
     ],
     "packages-dev": [
