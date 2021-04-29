@@ -13,6 +13,8 @@ provider:
         throttle:
             burstLimit: 20
             rateLimit: 10
+    environment:
+        foo: 1
 
 plugins:
     - ./vendor/bref/bref
@@ -59,6 +61,10 @@ resources:
             Type: AWS::SNS::Topic
             Properties:
                 TopicName: triggerFunction-${opt:stage}
+
+custom:
+    bref:
+        separateVendor: true
 
 # Exclude files from deployment
 package:
